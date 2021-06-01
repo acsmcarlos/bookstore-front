@@ -1,0 +1,30 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav mode="side" opened class="barra-lateral">
+
+        <mat-nav-list>
+            <a routerLink="" mat-list-item>
+                <i class="material-icons">home</i>
+                Home
+            </a>
+        </mat-nav-list>
+        
+        <mat-nav-list>
+            <a routerLink="/categorias" mat-list-item>
+                <i class="material-icons">menu_book</i>
+                Categorias
+            </a>
+        </mat-nav-list>
+
+        <!-- <mat-nav-list>
+            <a routerLink="/livros" mat-list-item>
+                <i class="material-icons">book</i>
+                Livros
+            </a>
+        </mat-nav-list> -->
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
